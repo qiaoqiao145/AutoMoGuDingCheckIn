@@ -20,8 +20,8 @@ logger = logging.getLogger("scheduler")
 # 设置调度器的日志标签
 _log_ctx.tag = "SCHEDULER"
 
-BASE_TIMES = ["08:00", "17:30"]  # 触发打卡的基础时间点
-MAX_OFFSET_MINUTES = 10  # 去机器化，随机让时间点偏移 0~10 分钟
+BASE_TIMES = ["08:30", "17:30"]  # 触发打卡的基础时间点
+MAX_OFFSET_MINUTES = 8  # 去机器化，随机让时间点偏移 0~10 分钟
 
 
 def generate_daily_schedule(day: date) -> List[datetime]:
